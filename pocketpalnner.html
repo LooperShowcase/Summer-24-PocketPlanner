@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pocket Planner - Manage Your Budget and Vacation</title>
+    <link rel="stylesheet" href="css.css" />
+    <link rel="icon" href="./WhatsApp Image 2024-08-22 at 5.50.26 PM.jpeg">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+          <img src="./WhatsApp Image 2024-08-22 at 5.50.26 PM.jpeg" alt="Pocket Planner Logo">
+          <span>Pocket Planner</span>
+      </div>
+      <div class="nav-container">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="cta-container">
+          <a href="#signup" class="cta">Sign Up</a>
+      </div>
+  </header>
+  
+  
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Plan Your Dream Vacation & Stay on Budget!</h2>
+        <a href="#signup" class="cta">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="feature-grid">
+          <!-- Budget Feature -->
+          <div class="feature-item budget-feature">
+            <h3>Set Your Budget</h3>
+            <p>Define your vacation budget and set savings goals.</p>
+            <input
+              type="number"
+              id="budget-input"
+              placeholder="Enter your budget (in USD)"
+            />
+            <button onclick="setBudget()">Set Budget</button>
+            <div id="budget-output" class="budget-output"></div>
+          </div>
+          <!-- Plan Your Vacation Feature -->
+          <div class="feature-item plan-feature">
+            <h3>Plan Your Vacation</h3>
+            <p>Organize your travel itinerary and destinations.</p>
+            <input
+              type="text"
+              id="vacation-input"
+              placeholder="Enter vacation destination"
+            />
+            <button onclick="planVacation()">Plan Vacation</button>
+            <div id="plan-output" class="plan-output"></div>
+          </div>
+          <!-- Track Spending Feature -->
+          <div class="feature-item track-feature">
+            <h3>Track Your Spending</h3>
+            <p>Keep track of your expenses and stay within budget.</p>
+            <input
+              type="number"
+              id="expense-input"
+              placeholder="Enter expense amount (in USD)"
+            />
+            <button onclick="trackSpending()">Track Spending</button>
+            <div id="track-output" class="track-output"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are passionate about helping you plan your dream vacation while
+          staying on budget. Our app, Pocket Planner, provides the tools you
+          need to manage your finances and travel plans effectively.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="cta">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Pocket Planner. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
